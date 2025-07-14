@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Hut - TopFoods</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px;
+      background-color: #fffdf7;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #e74c3c;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      font-size: 16px;
+      margin: 6px 0;
+    }
+
+    .gallery-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .gallery-card {
+      width: 250px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .gallery-card p {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      background: #ff6f61;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #e05243;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pizza Hut 🍕</h1>
+
+  <div class="info">
+    <p><strong>Cuisine:</strong> Pizzas</p>
+    <p><strong>Rating:</strong> ⭐ 4.2 | Delivery: 55–60 mins</p>
+    <p>Hot, cheesy, and loaded with toppings – treat yourself with our signature pizzas today!</p>
+  </div>
+
+  <div class="gallery-row">
+    <div class="gallery-card">
+      <img src="Images/onionPizza1.jpg" alt="Onion Pizza">
+      <p>Onion Delight Pizza</p>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/cornPizza2.jpg" alt="Corn Pizza">
+      <p>Golden Corn Pizza</p>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/pizza.jpg" alt="Cheesy Pizza">
+      <p>Classic Cheese Burst</p>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+</body>
+</html>

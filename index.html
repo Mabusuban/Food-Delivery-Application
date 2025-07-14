@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TopFoods - Restaurants</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url("Images/Banner2.jpg"); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #ff5722;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #e64a19;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .card {
+      width: 250px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: white;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .rating {
+      color: #27ae60;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">TopFoods 🍔</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.jsp">Cart 🛒</a>
+      <a href="login.jsp">Login</a>
+      <a href="orders.jsp">Orders</a>
+    </div>
+  </div>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <div class="hero-text">
+      <marquee><h1>Delicious Food Delivered Hot & Fresh!</h1></marquee>
+      <p>Find your favorite meals from Top Restaurants.</p>
+      <a href="login.jsp" class="btn">Order Now</a>
+    </div>
+  </div>
+
+  <!-- Restaurant Cards -->
+  <div class="grid">
+    <div class="card animate_animated animate_fadeIn" onclick="goTo('adil.html')">
+      <img src="Images/Bir1.jpg" alt="Adil Hotel">
+      <div class="card-content">
+        <h3>Adil Hotel</h3>
+        <p>North Indian, Biryani, Tandoor</p>
+        <p class="rating">⭐ 4.3 | 40-45 mins</p>
+      </div>
+    </div>
+
+    <div class="card animate_animated animate_fadeIn" onclick="goTo('ganesh.html')">
+      <img src="Images/North1.jpeg" alt="Jai Ganesh Bhojnalaya">
+      <div class="card-content">
+        <h3>Jai Ganesh Bhojnalaya</h3>
+        <p>North Indian, South Indian</p>
+        <p class="rating">⭐ 4.1 | 50-55 mins</p>
+      </div>
+    </div>
+
+    <div class="card animate_animated animate_fadeIn" onclick="goTo('bakery.html')">
+      <img src="Images/Burger.jpg" alt="Bakery World">
+      <div class="card-content">
+        <h3>Bakery World</h3>
+        <p>Bakery, Ice Cream, Beverages</p>
+        <p class="rating">⭐ 4.4 | 40-45 mins</p>
+      </div>
+    </div>
+
+    <div class="card animate_animated animate_fadeIn" onclick="goTo('pizza.html')">
+      <img src="Images/pizza.jpg" alt="Pizza Hut">
+      <div class="card-content">
+        <h3>Pizza Hut</h3>
+        <p>Pizzas</p>
+        <p class="rating">⭐ 4.2 | 55-60 mins</p>
+      </div>
+    </div>
+
+    <!-- NEW: Menu Card -->
+    <div class="card animate_animated animate_fadeIn" onclick="goTo('menuitem.jsp')">
+      <img src="Images/menu.jpeg" alt="Menu Items">
+      <div class="card-content">
+        <h3>Explore Menu</h3>
+        <p>All available dishes</p>
+        <p class="rating">🍽️ Popular Items</p>
+      </div>
+    </div>
+
+    <!-- NEW: Cart Card -->
+    <div class="card animate_animated animate_fadeIn" onclick="goTo('cart.jsp')">
+      <img src="Images/cart.jpg" alt="Your Cart">
+      <div class="card-content">
+        <h3>Your Cart</h3>
+        <p>View selected food items</p>
+        <p class="rating">🛒 Ready to Order</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function goTo(page) {
+      document.body.classList.add('animate__fadeOut');
+      setTimeout(() => {
+        window.location.href = page;
+      }, 300);
+    }
+  </script>
+
+</body>
+</html>

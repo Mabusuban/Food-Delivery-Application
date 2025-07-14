@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jai Ganesh Bhojnalaya - TopFoods</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .info {
+      margin-bottom: 25px;
+    }
+
+    .info p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .gallery-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .gallery-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      width: 220px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .gallery-card p {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      background: #ff5722;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #e64a19;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Jai Ganesh Bhojnalaya 🍛</h1>
+
+  <div class="info">
+    <p><strong>Cuisine:</strong> North Indian, South Indian</p>
+    <p><strong>Rating:</strong> ⭐ 4.1 | Delivery: 50–55 mins</p>
+    <p>Healthy, homely meals that taste just like your mother's cooking. Try our special thalis!</p>
+  </div>
+
+  <!-- First Row: North Indian Dishes -->
+  <div class="gallery-row">
+    <div class="gallery-card">
+      <img src="Images/North1.jpeg" alt="North Dish 1">
+      <p>Special Thali</p>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/North2.jpeg" alt="North Dish 2">
+      <p>Paneer Butter Masala</p>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/idlisouth1.jpeg" alt="South Dish 1">
+      <p>Steamed Idlis</p>
+    </div>
+  </div>
+
+  <!-- Second Row: South Indian Dishes -->
+  <div class="gallery-row">
+    <div class="gallery-card">
+      <img src="Images/dosasouth2.png" alt="South Dish 2">
+      <p>Masala Dosa</p>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/south3.jpeg" alt="South Dish 3">
+      <p>Mini South Combo</p>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/uppitusouth4.jpeg" alt="South Dish 4">
+      <p>Uppittu Upma</p>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adil Hotel - TopFoods</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .info {
+      margin-bottom: 25px;
+    }
+
+    .info p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .gallery-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .gallery-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      width: 220px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .gallery-card p {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      background: #ff5722;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #e64a19;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Adil Hotel 🍽️</h1>
+
+  <div class="info">
+    <p><strong>Cuisine:</strong> North Indian, Biryani, Tandoor</p>
+    <p><strong>Rating:</strong> ⭐ 4.3 | Delivery: 40–45 mins</p>
+    <p>Welcome to Adil Hotel! Discover the true taste of India through rich biryanis and smoky tandoori delights crafted with love and spices.</p>
+  </div>
+
+  <!-- First Row: 3 Images -->
+  <marquee><div class="gallery-row">
+    <div class="gallery-card">
+      <img src="Images/Bir1.jpg" alt="Biryani 1">
+      <p>Biryani Special</p>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/Bir2.jpg" alt="Biryani 2">
+      <p>Spicy Chicken Biryani</p>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/Bir3.jpg" alt="Biryani 3">
+      <p>Veg Dum Biryani</p>
+    </div>
+  </div>
+</marquee>
+  <!-- Second Row: 3 Images -->
+  <div class="gallery-row">
+    <div class="gallery-card">
+      <img src="Images/Bir4.jpg" alt="Biryani 4">
+      <p>Paneer Biryani</p>
+      <a href="login.jsp" class="btn">Order Now</a>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/Tan1.jpg" alt="Tandoori 1">
+      <p>Chicken Tandoori</p>
+      <a href="login.jsp" class="btn">Order Now</a>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/Tan2.jpg" alt="Tandoori 2">
+      <p>Seekh Kebab</p>
+      <a href="login.jsp" class="btn">Order Now</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+</body>
+</html>
